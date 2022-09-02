@@ -23,26 +23,26 @@ function renderProduct(arrProduct) {
         var proD = arrProduct[index];
         // console.log(proD);
         html += `
-    <div class="col col-6 col-lg-4 col-xl-4">
-    <div class="item">
-      <div class="thumbnail">
-      <img src="${proD.image}" alt="" />
-      </div>
-      <div class="detail">
-      <h3>${proD.name}</h3>
-      <p>${proD.description}</p>
-      </div>
-    </div>
-    <div class="price">
-      <div class="col-6 buy">
-        <button class="btn">Buy now</button>
-      </div>
-      <div class="col-6 cost">
-      <p>${proD.price}$</p>
-      </div>
-    </div>
-  </div>
-  `;
+            <div class="col col-6 col-lg-4 col-xl-4">
+                <div class="item">
+                    <div class="thumbnail">
+                        <img src="${proD.image}" alt="" />
+                    </div>
+                    <div class="detail">
+                        <h3>${proD.name}</h3>
+                        <p>${proD.description}</p>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="col-6 buy">
+                        <button class="btn">Buy now</button>
+                    </div>
+                    <div class="col-6 cost">
+                        <p>${proD.price}$</p>
+                    </div>
+                </div>
+            </div>
+        `;
     }
     document.querySelector("#item").innerHTML = html;
 }
