@@ -1,39 +1,4 @@
-.menu {
-    line-height: 2;
-
-    .container {
-        a {
-            text-decoration: none;
-            color: $text-c1-dark;
-            font-size: $text-2xl;
-            font-weight: $text-light;
-            margin-right: 25px;
-
-            @media only screen and (max-width: 768px) {
-                font-size: $text-base;
-            }
-        }
-
-        .active {
-            font-weight: $text-regular;
-            position: relative;
-
-            &::after {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                background: $bg-c1-dark;
-                bottom: -7px;
-                left: 0;
-            }
-        }
-    }
-}
-
 .register {
-    margin: 50px 0;
-
     .container {
         .title {
             h4 {

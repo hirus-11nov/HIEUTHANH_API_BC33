@@ -20,6 +20,15 @@ class Header extends HTMLElement {
                         <a href="">Register</a>
                     </div>
                 </div>
+                <nav class="menu">
+                    <div class="container">
+                        <a href="" class="active">Home</a>
+                        <a href="">Men</a>
+                        <a href="">Woman</a>
+                        <a href="">Kid</a>
+                        <a href="">Sport</a>
+                    </div>
+                </nav>
             </header>
         `;
     }
