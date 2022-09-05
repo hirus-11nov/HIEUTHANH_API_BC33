@@ -4,10 +4,8 @@ document.querySelector("#btnDangKy").onclick = function () {
   member.password = document.querySelector("#passwordMember").value;
   member.name = document.querySelector("#nameMember").value;
   //   member.passwordConfirm = document.querySelector("#passwordMember").value;
-  member.gender =
-    document.querySelector("input[name=gender]:checked").value === "true";
+  member.gender = document.querySelector("input[name=gender]:checked").value;
   member.phone = document.querySelector("#phoneMember").value;
-  //   console.log(typeof member.gender);
   console.log("member", member);
   var promise = axios({
     url: "https://shop.cyberlearn.vn/api/Users/signup",
