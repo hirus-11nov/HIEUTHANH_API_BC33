@@ -1,0 +1,91 @@
+.footer {
+    padding-top: 100px;
+
+    .footer-top {
+        background-color: $bg-c1-product;
+
+        .container {
+            .row {
+                padding: 20px;
+
+                .footer-1 {
+                    h3 {
+                        @include text($text-2xl, $text-bold, $text-c1-dark);
+                    }
+
+                    line-height: 2;
+
+                    a {
+                        display: flex;
+                        text-decoration: none;
+                        @include text($text-base, $text-regular, $text-c1-dark);
+                    }
+                }
+
+                .footer-2 {
+                    @extend .footer-1;
+                    border-left: 1px solid #cecece;
+                    border-right: 1px solid #cecece;
+                }
+
+                .footer-3 {
+                    h3 {
+                        font-size: $text-2xl;
+                        font-weight: $text-bold;
+                        color: $text-c1-dark;
+                    }
+
+                    p {
+                        @include text($text-base, $text-regular, $text-c1-dark);
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #d66761;
+                    }
+
+                    line-height: 2;
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        background-color: #ececec;
+
+        .container {
+            .row {
+                padding: 20px;
+
+                .footer-1 {
+                    h3 {
+                        font-size: $text-2xl;
+                        font-weight: $text-bold;
+                        color: $text-c1-dark;
+                    }
+
+                    p {
+                        @include text($text-base, $text-regular, $text-c1-dark);
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #d66761;
+                    }
+
+                    line-height: 2;
+                }
+
+                .footer-2 {
+                    @extend .footer-1;
+                    border-left: 1px solid #cecece;
+                    border-right: 1px solid #cecece;
+                }
+
+                .footer-3 {
+                    @extend .footer-1;
+                }
+            }
+        }
+    }
+}

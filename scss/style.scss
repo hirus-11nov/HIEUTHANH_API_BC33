@@ -1,4 +1,8 @@
-@import "./base/base";
-@import "./themes/variable";
-@import "./pages/index/index.scss";
-@import "./pages/register/register.scss";
+@import "./base/reset";
+@import "./utilities/variable";
+@import "./utilities/mixin";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./pages/index/index";
+@import "./pages/register/register";
+
