@@ -80,7 +80,7 @@
               <input
                 type="email"
                 class="w-100"
-                id=""
+                id="emailMember"
                 placeholder="Email (*)"
                 value=""
                 required
@@ -88,7 +88,7 @@
               <input
                 type="password"
                 class="w-100"
-                id=""
+                id="passwordMember"
                 placeholder="Password (*)"
                 value=""
                 required
@@ -96,7 +96,7 @@
               <input
                 type="password"
                 class="w-100"
-                id=""
+                id="passwordConfirm"
                 placeholder="Password confirm (*)"
                 value=""
                 required
@@ -106,7 +106,7 @@
               <input
                 type="name"
                 class="w-100"
-                id=""
+                id="nameMember"
                 placeholder="Name (*) "
                 value=""
                 required
@@ -115,19 +115,31 @@
               <input
                 type="phone"
                 class="w-100"
-                id=""
+                id="phoneMember"
                 placeholder="Phone (*)"
                 value=""
                 required
               />
               <div class="check">
                 <span>Gender</span>
-                <input type="radio" class="size" name="gender" id="" />
+                <input
+                  type="radio"
+                  class="size"
+                  name="gender"
+                  value="true"
+                  id=""
+                />
                 <label for="">Male</label>
-                <input type="radio" class="size" name="gender" id="" />
+                <input
+                  type="radio"
+                  class="size"
+                  name="gender"
+                  value="false"
+                  id=""
+                />
                 <label for="">Female</label>
               </div>
-              <button class="btn-submit">Submit</button>
+              <button class="btn-submit" id="btnDangKy">Submit</button>
             </div>
           </div>
         </div>
@@ -200,7 +212,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
+    <script src="../models/Member.js"></script>
     <script src="../controllers/register.js"></script>
   </body>
 </html>
