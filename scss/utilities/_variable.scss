@@ -26,26 +26,3 @@ $bg-c1-button: #f8b653;
 $bg-c1-product: #f8f8f8;
 $bg-c1-price: #dedddc;
 $bg-c1-register: #ae18e2;
-
-
-@mixin text($fz, $fw, $c) {
-  font-size: $fz;
-  font-weight: $fw;
-  color: $c;
-}
-@mixin button($fz, $fw, $c, $bg, $pd) {
-  @include text($fz, $fw, $c);
-  background: $bg;
-  padding: $pd;
-  cursor: pointer;
-}
-@mixin footer1($fz, $fw, $c) {
-  font-size: $fz;
-  font-weight: $fw;
-  color: $c;
-}
-@mixin footer2($fz, $fw, $c) {
-  font-size: $fz;
-  font-weight: $fw;
-  color: $c;
-}
