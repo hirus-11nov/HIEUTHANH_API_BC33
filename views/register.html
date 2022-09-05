@@ -30,17 +30,8 @@
 
 <body>
     <header-component></header-component>
-    <section class="menu">
-        <div class="container">
-            <a href="" class="active">Page</a>
-            <a href="">Men</a>
-            <a href="">Woman</a>
-            <a href="">Kid</a>
-            <a href="">Sport</a>
-        </div>
-    </section>
-    <section class="register">
-        <div class="container">
+    <section class="register py-5">
+        <div class="container pt-5">
             <div class="title text-center">
                 <h4>Register</h4>
             </div>
@@ -59,10 +50,10 @@
                         <input type="phone" class="w-100" id="phoneMember" placeholder="Phone (*)" value="" required />
                         <div class="check">
                             <span>Gender</span>
-                            <input type="radio" class="size" name="gender" value="true" checked />
-                            <label for="">Male</label>
-                            <input type="radio" class="size" name="gender" value="false"/>
-                            <label for="">Female</label>
+                            <input type="radio" class="size" name="gender" value="true" checked id="male"/>
+                            <label for="male">Male</label>
+                            <input type="radio" class="size" name="gender" value="false" id="female"/>
+                            <label for="female">Female</label>
                         </div>
                         <button class="btn-submit" id="btnDangKy">Submit</button>
                     </div>
