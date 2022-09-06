@@ -58,7 +58,7 @@ class Footer extends HTMLElement {
                                 <a href="#">Shipping and delivery</a>
                                 <a href="#">Returns</a>
                             </div>
-                            <div class="col-12 col-lg-4 col-md-4 footer-3 pt-4 pt-lg-0">
+                            <div class="col-12 col-lg-4 col-md-4 footer-3 pt-4 pt-lg-0 pt-md-0">
                                 <h3>REGISTER</h3>
                                 <p>
                                     Create one account to manage everything you do with Nike, from
@@ -82,7 +82,7 @@ class Footer extends HTMLElement {
                                 <p>Give the gift that alway fits</p>
                                 <a href="#">Views card</a>
                             </div>
-                            <div class="col-12 col-lg-4 col-md-4 footer-3 pt-4 pt-lg-0">
+                            <div class="col-12 col-lg-4 col-md-4 footer-3 pt-4 pt-lg-0 pt-md-0">
                                 <h3>STORES NEAR YOU</h3>
                                 <p>Location a Nike retail store of authorized retailer</p>
                                 <a href="#">Search</a>

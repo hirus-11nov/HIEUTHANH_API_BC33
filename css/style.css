@@ -104,9 +104,14 @@
   line-height: 2;
 }
 .footer .footer-top .container .row .footer-1 h3, .footer .footer-top .footer-bottom .container .row .footer-3 h3, .footer .footer-bottom .footer-top .container .row .footer-3 h3, .footer .footer-top .container .row .footer-2 h3 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 800;
   color: #000;
+}
+@media (min-width: 576px) {
+  .footer .footer-top .container .row .footer-1 h3, .footer .footer-top .footer-bottom .container .row .footer-3 h3, .footer .footer-bottom .footer-top .container .row .footer-3 h3, .footer .footer-top .container .row .footer-2 h3 {
+    font-size: 20px;
+  }
 }
 .footer .footer-top .container .row .footer-1 a, .footer .footer-top .footer-bottom .container .row .footer-3 a, .footer .footer-bottom .footer-top .container .row .footer-3 a, .footer .footer-top .container .row .footer-2 a {
   display: flex;
@@ -123,9 +128,14 @@
   line-height: 2;
 }
 .footer .footer-top .container .row .footer-3 h3 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 800;
   color: #000;
+}
+@media (min-width: 576px) {
+  .footer .footer-top .container .row .footer-3 h3 {
+    font-size: 20px;
+  }
 }
 .footer .footer-top .container .row .footer-3 p {
   font-size: 16px;
@@ -146,9 +156,14 @@
   line-height: 2;
 }
 .footer .footer-bottom .container .row .footer-1 h3, .footer .footer-bottom .container .row .footer-3 h3, .footer .footer-bottom .container .row .footer-2 h3 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 800;
   color: #000;
+}
+@media (min-width: 576px) {
+  .footer .footer-bottom .container .row .footer-1 h3, .footer .footer-bottom .container .row .footer-3 h3, .footer .footer-bottom .container .row .footer-2 h3 {
+    font-size: 20px;
+  }
 }
 .footer .footer-bottom .container .row .footer-1 p, .footer .footer-bottom .container .row .footer-3 p, .footer .footer-bottom .container .row .footer-2 p {
   font-size: 16px;
