@@ -1,98 +1,93 @@
 .carousel {
-    height: 600px;
     background-image: url("../../../img/image 6.png");
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
+    background-size: contain;
+    background-position: bottom;
+    padding: 90px 0;
+
+    @include responsive ('sm') {
+        padding: 150px 0;
+    }
 
     .container {
-        .content {
-            display: flex;
-            align-items: center;
-            position: relative;
-            padding: 0 50px;
+        .content-left {
+            text-align: center;
 
-            .content-left {
-                text-align: center;
-
-                img {
-                    position: relative;
-                    width: 821px;
-                    height: 392px;
-                    left: 86px;
-                    top: 5px;
-
-                    @media only screen and (max-width: 992px) {
-                        width: 100%;
-                        top: 0;
-                        left: 0;
-                        object-fit: contain;
-                    }
-                }
+            img {
+                width: 100%;
             }
+        }
 
-            .content-right {
-                z-index: 10;
+        .content-right {
+            z-index: 10;
+            position: relative;
+
+            .detail {
+                position: absolute;
+                right: 20px;
+                top: 30%;
 
                 h3 {
-                    font-size: $text-4xl;
+                    font-size: $text-base;
                     font-weight: $text-light;
 
-                    @media only screen and (max-width: 992px) {
-                        font-size: $text-3xl;
-                        font-weight: $text-light;
+                    @include responsive('xxxs') {
+                        font-size: $text-xl;
                     }
 
-                    @media only screen and (max-width: 768px) {
-                        font-size: $text-2xl;
-                        font-weight: $text-light;
+                    @include responsive('sm') {
+                        font-size: $text-3xl;
+                    }
+
+                    @include responsive('lg') {
+                        font-size: $text-4xl;
                     }
                 }
 
                 h4 {
-                    font-size: $text-2xl;
+                    font-size: $text-xs;
                     font-weight: $text-light;
-                    margin-bottom: 30px;
+                    margin-bottom: 10px;
 
-                    @media only screen and (max-width: 992px) {
-                        font-size: $text-2xl;
-                        font-weight: $text-light;
+                    @include responsive ('md') {
+                        font-size: $text-xl;
                     }
 
-                    @media only screen and (max-width: 768px) {
-                        font-size: $text-xl;
-                        font-weight: $text-light;
-                        margin-bottom: 10px;
+                    @include responsive ('lg') {
+                        font-size: $text-2xl;
                     }
                 }
 
                 .btn {
-                    @include button($text-2xl,
+                    @include button($text-base,
                         $text-light,
                         $text-c1-light,
                         $bg-c1-button,
-                        10px 30px);
+                        5px 10px);
 
-                    @media only screen and (max-width: 768px) {
-                        @include button($text-xl,
+                    @include responsive ('xs') {
+                        @include button($text-2xl,
                             $text-light,
                             $text-c1-light,
                             $bg-c1-button,
-                            5px 20px);
+                            10px 30px);
                     }
                 }
             }
         }
-
-        .slide {
-            display: flex;
-            justify-content: space-between;
-            position: relative;
-            top: -200px;
-
-            .slider-left {}
-
-            .slide-right {}
-        }
     }
+
+    .slide {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        padding: 0 20px;
+
+        .slider-left {}
+
+        .slide-right {}
+    }
+
 }
