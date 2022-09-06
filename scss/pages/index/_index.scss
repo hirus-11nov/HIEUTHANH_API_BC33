@@ -45,7 +45,7 @@
                 }
 
                 h4 {
-                    font-size: $text-xs;
+                    font-size: $text-xs - 3px;
                     font-weight: $text-light;
                     margin-bottom: 10px;
 
@@ -85,9 +85,19 @@
         top: 50%;
         padding: 0 20px;
 
-        .slider-left {}
+        .slider-left,
+        .slide-right {
+            z-index: 100;
+            img {
+                width: 30px;
+                height: 30px;
+                @include responsive ('xs') {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
 
-        .slide-right {}
     }
 
 }
