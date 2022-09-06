@@ -63,19 +63,18 @@
 
                     .buy {
                         .btn {
-                            @include button($text-2xl1,
+                            @include button($text-xl,
                                 $text-extraLight,
                                 $text-c1-dark,
                                 $bg-c1-button,
-                                10px 30px);
+                                5px 20px);
 
-                            @media only screen and (max-width: 992px) {
-                                font-size: $text-base;
-                                @include button($text-xl,
+                            @include responsive ('md') {
+                                @include button($text-2xl1,
                                     $text-extraLight,
                                     $text-c1-dark,
                                     $bg-c1-button,
-                                    5px 20px);
+                                    10px 20px);
                             }
                         }
                     }

@@ -4,9 +4,17 @@
         padding-top: 100px;
         .detail-product__left {
             .detail-product__thumb {
-                padding: 65px 55px;
-                margin: 0 80px 80px 80px;
+                padding: 30px 30px;
+                margin: 0 40px 50px 40px;
                 background-color: $bg-c1-light;
+                @include responsive ('md') {
+                    padding: 60px 30px;
+                    margin: 0 70px 80px 70px;
+                }
+                @include responsive ('lg') {
+                    padding: 65px 55px;
+                    margin: 0 80px 80px 80px;
+                }
 
                 img {
                     width: 100%;
