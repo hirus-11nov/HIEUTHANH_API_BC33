@@ -22,8 +22,12 @@
             a {
                 text-decoration: none;
                 color: $text-c1-extraLight;
-                margin-right: 10px;
-                font-size: $text-base;
+                margin-right: 2px;
+                font-size: $text-xs;
+                @include responsive ('xs') {
+                    font-size: $text-base;
+                    margin-right: 10px;
+                }
 
                 img {
                     width: 27px;
@@ -37,8 +41,12 @@
 
             span {
                 color: $text-c1-light;
-                font-size: $text-2xl;
-                margin-right: 10px;
+                font-size: $text-xs;
+                margin-right: 2px;
+                @include responsive ('xs') {
+                    font-size: $text-2xl;
+                    margin-right: 10px;
+                }
             }
         }
     }
@@ -52,12 +60,18 @@
             a {
                 text-decoration: none;
                 color: $text-c1-dark;
-                font-size: $text-2xl;
+                font-size: $text-base - 1px;
                 font-weight: $text-light;
-                margin-right: 25px;
+                margin-right: 15px;
 
-                @media only screen and (max-width: 768px) {
-                    font-size: $text-base;
+                @include responsive('xxs') {
+                    font-size: $text-xl;
+                    margin-right: 20px;
+                }
+
+                @include responsive('xs') {
+                    font-size: $text-2xl;
+                    margin-right: 25px;
                 }
             }
 
