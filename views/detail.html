@@ -30,10 +30,39 @@
 
 <body>
     <header-component></header-component>
-    <section class="product py-5">
+    <section class="detail-product py-5">
         <div class="container py-5">
+            <div class="detail-product__left">
+                <div class="detail-product__thumb">
+                    <img src="/img/image 3.png" alt="">
+                </div>
+            </div>
+            <div class="detail-product__right">
+                <div class="detail-product__content">
+                    <p class="detail-product__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At omnis expedita quae vitae eligendi consequuntur voluptas sunt molestiae. Ratione pariatur quis cum aliquid ipsam mollitia velit ipsa, repudiandae assumenda accusamus.</p>
+                    <p class="detail-product__a-size">Available size</p>
+                    <div class="detail-product__size">
+                        <button>38</button>
+                        <button>39</button>
+                        <button>40</button>
+                        <button>41</button>
+                        <button>42</button>
+                    </div>
+                    <p class="detail-product__price"></p>
+                    <div class="detail-product__quantity">
+                        <button class="plus">+</button>
+                        <span>1</span>
+                        <button class="minus">-</button>
+                    </div>
+                    <button class="add-to-cart">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="relate-product products py-5">
+        <div class="container">
             <div class="title">
-                <h3>-Product Feature-</h3>
+                <h3>-Related Product-</h3>
             </div>
             <div class="row" id="item"></div>
         </div>
