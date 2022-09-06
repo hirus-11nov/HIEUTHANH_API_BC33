@@ -21,7 +21,7 @@ function renderProduct(arrProduct) {
     for (let index = 0; index < arrProduct.length; index++) {
         var proD = arrProduct[index];
         html += `
-            <div class="col col-6 col-lg-4 col-xl-4">
+            <div class="col-lg-4 col-md-6">
                 <div class="item">
                     <div class="thumbnail">
                         <img src="${proD.image}" alt="" />

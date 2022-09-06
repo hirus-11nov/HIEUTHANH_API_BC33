@@ -244,51 +244,51 @@
 .product .container .row {
   display: flex;
 }
-.product .container .row .col {
+.product .container .row .col-lg-4 {
   padding: 20px;
   display: flex;
   flex-direction: column;
 }
-.product .container .row .col .item {
+.product .container .row .col-lg-4 .item {
   background-color: #f8f8f8;
   padding: 20px;
   flex: 1 1 auto;
 }
-.product .container .row .col .item .thumbnail {
+.product .container .row .col-lg-4 .item .thumbnail {
   text-align: center;
 }
-.product .container .row .col .item .thumbnail img {
+.product .container .row .col-lg-4 .item .thumbnail img {
   width: 100%;
   -o-object-fit: scale-down;
      object-fit: scale-down;
 }
-.product .container .row .col .detail h3 {
+.product .container .row .col-lg-4 .detail h3 {
   font-weight: 300;
   font-size: 24px;
   color: #000;
 }
 @media only screen and (max-width: 576px) {
-  .product .container .row .col .detail h3 {
+  .product .container .row .col-lg-4 .detail h3 {
     font-size: 18px;
   }
 }
-.product .container .row .col .detail p {
+.product .container .row .col-lg-4 .detail p {
   font-weight: 300;
   font-size: 18px;
   color: #cbc9c9;
 }
 @media only screen and (max-width: 576px) {
-  .product .container .row .col .detail p {
+  .product .container .row .col-lg-4 .detail p {
     font-size: 16px;
   }
 }
-.product .container .row .col .price {
+.product .container .row .col-lg-4 .price {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #dedddc;
 }
-.product .container .row .col .price .buy .btn {
+.product .container .row .col-lg-4 .price .buy .btn {
   font-size: 24px;
   font-weight: 200;
   color: #000;
@@ -297,7 +297,7 @@
   cursor: pointer;
 }
 @media only screen and (max-width: 992px) {
-  .product .container .row .col .price .buy .btn {
+  .product .container .row .col-lg-4 .price .buy .btn {
     font-size: 16px;
     font-size: 18px;
     font-weight: 200;
@@ -307,19 +307,19 @@
     cursor: pointer;
   }
 }
-.product .container .row .col .price .cost {
+.product .container .row .col-lg-4 .price .cost {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.product .container .row .col .price .cost p {
+.product .container .row .col-lg-4 .price .cost p {
   margin-bottom: 0;
   font-size: 24px;
   font-weight: 600;
   color: #000;
 }
 @media only screen and (max-width: 992px) {
-  .product .container .row .col .price .cost p {
+  .product .container .row .col-lg-4 .price .cost p {
     font-size: 16px;
     font-weight: 600;
     color: #000;
