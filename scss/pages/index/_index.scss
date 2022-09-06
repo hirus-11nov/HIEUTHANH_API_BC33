@@ -49,7 +49,7 @@
                     font-weight: $text-light;
                     margin-bottom: 10px;
 
-                    @include responsive ('md') {
+                    @include responsive ('sm') {
                         font-size: $text-xl;
                     }
 

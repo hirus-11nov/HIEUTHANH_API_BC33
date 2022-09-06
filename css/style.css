@@ -323,7 +323,7 @@
   font-weight: 300;
   margin-bottom: 10px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .carousel .container .content-right .detail h4 {
     font-size: 18px;
   }
