@@ -28,8 +28,14 @@
   font-size: 16px;
 }
 .header .container .header-right a img {
-  width: 31px;
-  height: 31px;
+  width: 27px;
+  height: 27px;
+}
+@media (min-width: 576px) {
+  .header .container .header-right a img {
+    width: 31px;
+    height: 31px;
+  }
 }
 .header .container .header-right span {
   color: #fff;
@@ -326,6 +332,80 @@
   position: relative;
   top: -200px;
 }
+.detail-product .container {
+  padding-top: 100px;
+}
+.detail-product .container .detail-product__left .detail-product__thumb {
+  padding: 65px 55px;
+  margin: 0 80px 80px 80px;
+  background-color: #f5f5f5;
+}
+.detail-product .container .detail-product__left .detail-product__thumb img {
+  width: 100%;
+}
+.detail-product .container .detail-product__right .detail-product__content .detail-product__name {
+  line-height: 36px;
+  font-size: 30px;
+  font-weight: 300;
+  color: #000;
+}
+.detail-product .container .detail-product__right .detail-product__content .detail-product__desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  line-height: 19px;
+}
+.detail-product .container .detail-product__right .detail-product__content .detail-product__a-size {
+  line-height: 29px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #1ED90E;
+}
+.detail-product .container .detail-product__right .detail-product__content .detail-product__size button {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1E1D1D;
+  line-height: 29px;
+  background: #cccccc;
+  border: none;
+  margin-right: 15px;
+}
+.detail-product .container .detail-product__right .detail-product__content .detail-product__price {
+  line-height: 36px;
+  margin-top: 15px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #FC0303;
+}
+.detail-product .container .detail-product__right .detail-product__content .detail-product__quantity .plus,
+.detail-product .container .detail-product__right .detail-product__content .detail-product__quantity .minus {
+  width: 50px;
+  height: 50px;
+  border: none;
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 36px;
+  background: linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
+}
+.detail-product .container .detail-product__right .detail-product__content .detail-product__quantity span {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+  line-height: 36px;
+  padding: 0 15px;
+}
+.detail-product .container .detail-product__right .detail-product__content .add-to-cart {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+  padding: 15px 25px;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+}
+
 .register .container .title h4 {
   font-size: 40px;
   font-weight: 400;

@@ -26,8 +26,12 @@
                 font-size: $text-base;
 
                 img {
-                    width: 31px;
-                    height: 31px;
+                    width: 27px;
+                    height: 27px;
+                    @include responsive ('xs') {
+                        width: 31px;
+                        height: 31px;
+                    }
                 }
             }
 

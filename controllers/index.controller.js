@@ -24,7 +24,7 @@ function renderProduct(arrProduct) {
             <div class="col-lg-4 col-md-6">
                 <div class="item">
                     <div class="thumbnail">
-                        <img src="${proD.image}" alt="" />
+                        <a href="/views/detail.html?productid=${proD.id}"><img src="${proD.image}" alt="" /></a>
                     </div>
                     <div class="detail">
                         <h3>${proD.name}</h3>
@@ -33,7 +33,7 @@ function renderProduct(arrProduct) {
                 </div>
                 <div class="price">
                     <div class="col-6 buy">
-                        <button class="btn">Buy now</button>
+                        <a href="/views/detail.html?productid=${proD.id}" class="btn">Buy now</a>
                     </div>
                     <div class="col-6 cost">
                         <p>${proD.price}$</p>

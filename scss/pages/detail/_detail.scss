@@ -1,0 +1,80 @@
+// START DETAIL
+.detail-product {
+    .container {
+        padding-top: 100px;
+        .detail-product__left {
+            .detail-product__thumb {
+                padding: 65px 55px;
+                margin: 0 80px 80px 80px;
+                background-color: $bg-c1-light;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .detail-product__right {
+            .detail-product__content {
+                .detail-product__name {
+                    line-height: 36px;
+                    @include text ($text-3xl, $text-light, $bg-c1-dark);
+                }
+
+                .detail-product__desc {
+                    @include text ($text-xs + 2px, $text-regular, $text-c1-dark);
+                    line-height: 19px;
+                }
+
+                .detail-product__a-size {
+                    line-height: 29px;
+                    @include text ($text-2xl1, $text-regular + 100, #1ED90E);
+                }
+
+                .detail-product__size {
+                    button {
+                        @include text ($text-2xl1, $text-semiBold, $text-c1-size);
+                        line-height: 29px;
+                        background: $bg-c1-size;
+                        border: none;
+                        margin-right: 15px;
+                    }
+                }
+
+                .detail-product__price {
+                    line-height: 36px;
+                    margin-top: 15px;
+                    @include text ($text-3xl, $text-semiBold, #FC0303);
+                }
+
+                .detail-product__quantity {
+
+                    .plus,
+                    .minus {
+                        width: 50px;
+                        height: 50px;
+                        border: none;
+                        @include text ($text-3xl, $text-regular, $text-c1-light);
+                        line-height: 36px;
+                        background: linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
+                    }
+
+                    span {
+                        @include text ($text-3xl, $text-regular, $text-c1-dark);
+                        line-height: 36px;
+                        padding: 0 15px;
+                    }
+
+                }
+
+                .add-to-cart {
+                    @include button ($text-2xl1, $text-regular + 100, $text-c1-light, linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%), 15px 25px);
+                    border: none;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+// END DETAIL
