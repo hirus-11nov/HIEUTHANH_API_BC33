@@ -425,6 +425,7 @@
   background: #cccccc;
   border: none;
   margin-right: 15px;
+  margin-top: 10px;
 }
 .detail-product .container .detail-product__right .detail-product__content .detail-product__price {
   line-height: 36px;
