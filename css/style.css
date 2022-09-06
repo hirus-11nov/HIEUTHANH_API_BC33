@@ -464,13 +464,15 @@
   }
 }
 .register .container .form-fill .row .form-left, .register .container .form-fill .row .form-right {
-  padding: 0 50px;
+  padding: 0 25px;
 }
 .register .container .form-fill .row .form-left input, .register .container .form-fill .row .form-right input {
+  position: relative;
   font-size: 30px;
   font-weight: 400;
   color: #000;
   padding: 10px;
+  padding-right: 25px;
   margin-bottom: 10px;
   border: none;
   border-bottom: 5px solid;
@@ -487,11 +489,16 @@
 .register .container .form-fill .row .form-left input:focus, .register .container .form-fill .row .form-right input:focus {
   outline: none !important;
 }
+.register .container .form-fill .row .form-left input + span, .register .container .form-fill .row .form-right input + span {
+  position: absolute;
+  transform: translate(-20px, 20px);
+  color: red;
+}
 .register .container .form-fill .row .form-right .check {
   font-size: 30px;
   font-weight: 400;
   color: #000;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 @media only screen and (max-width: 992px) {
   .register .container .form-fill .row .form-right .check {
@@ -501,17 +508,47 @@
   }
 }
 .register .container .form-fill .row .form-right .check .size {
-  width: 40px;
-  height: 25px;
+  display: none;
 }
-@media only screen and (max-width: 992px) {
-  .register .container .form-fill .row .form-right .check .size {
-    width: 35px;
-    height: 20px;
+.register .container .form-fill .row .form-right .check .size + label::before {
+  content: "";
+  background: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 5px;
+  right: 15px;
+  margin-left: 35px;
+  margin-right: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 0 10px #cccccc;
+}
+@media (min-width: 992px) {
+  .register .container .form-fill .row .form-right .check .size + label::before {
+    width: 30px;
+    height: 30px;
   }
 }
-.register .container .form-fill .row .form-right .check input[name=gender] {
-  accent-color: #ae18e2;
+.register .container .form-fill .row .form-right .check .size:checked + label::before {
+  background: #ae18e2;
+}
+.register .container .form-fill .row .form-right .check .gender {
+  flex-direction: column;
+}
+.register .container .form-fill .row .form-right .check .gender label:last-child {
+  margin-top: 15px;
+}
+@media (min-width: 414px) {
+  .register .container .form-fill .row .form-right .check .gender {
+    flex-direction: row;
+  }
+  .register .container .form-fill .row .form-right .check .gender label:last-child {
+    margin-top: 0;
+  }
 }
 .register .container .form-fill .row .form-right .btn-submit {
   display: block;

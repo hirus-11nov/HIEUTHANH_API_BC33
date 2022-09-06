@@ -13,9 +13,10 @@
         .form-fill {
             .row {
                 .form-left {
-                    padding: 0 50px;
+                    padding: 0 25px;
 
                     input {
+                        position: relative;
                         @include text($text-3xl, $text-regular, $text-c1-dark);
 
                         @media only screen and (max-width: 992px) {
@@ -23,6 +24,7 @@
                         }
 
                         padding: 10px;
+                        padding-right: 25px;
                         margin-bottom: 10px;
                         border: none;
                         border-bottom: 5px solid;
@@ -33,6 +35,11 @@
 
                         &:focus {
                             outline: none !important;
+                        }
+                        & + span {
+                            position: absolute;
+                            transform: translate(-20px, 20px);
+                            color: red;
                         }
                     }
                 }
@@ -47,21 +54,48 @@
                             @include text($text-2xl, $text-regular, $text-c1-dark);
                         }
 
-                        padding: 20px 0;
+                        padding: 40px 0;
 
                         .size {
-                            width: 40px;
-                            height: 25px;
-
-                            @media only screen and (max-width: 992px) {
-                                width: 35px;
+                            display: none;
+                            &+label::before {
+                                content: "";
+                                background: #cccccc;
+                                border-radius: 50%;
+                                display: inline-block;
+                                width: 20px;
                                 height: 20px;
+                                position: relative;
+                                top: 5px;
+                                right: 15px;
+                                margin-left: 35px;
+                                margin-right: 10px;
+                                cursor: pointer;
+                                text-align: center;
+                                transition: all .25s ease;
+                                box-shadow: 0 0 0 10px #cccccc;
+                                @include responsive ('md') {
+                                    width: 30px;
+                                    height: 30px;
+                                };
+                            }
+                            &:checked + label::before {
+                                background: $bg-c1-register;
+                            }
+                        }
+                        .gender {
+                            flex-direction: column;
+                            label:last-child {
+                                margin-top: 15px;
+                            }
+                            @include responsive ('xxs') {
+                                flex-direction: row;
+                                label:last-child {
+                                    margin-top: 0;
+                                }
                             }
                         }
 
-                        input[name="gender"] {
-                            accent-color: $bg-c1-register;
-                        }
                     }
 
                     .btn-submit {
