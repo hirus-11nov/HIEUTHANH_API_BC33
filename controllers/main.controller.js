@@ -8,16 +8,16 @@ class Header extends HTMLElement {
                 <div class="container">
                     <div class="header-left">
                         <a href="/">
-                            <img src="../img/image 3.png" alt="logo" />
+                            <img src="/img/image 3.png" alt="logo" />
                         </a>
                     </div>
                     <div class="header-right">
                         <a href="#">
-                            <img src="../img/image 7.png" alt="Cart" />
+                            <img src="/img/image 7.png" alt="Cart" />
                         </a>
                         <span>(1)</span>
                         <a href="#">Login</a>
-                        <a href="../views/register.html">Register</a>
+                        <a href="/views/register.html">Register</a>
                     </div>
                 </div>
                 <nav class="menu">

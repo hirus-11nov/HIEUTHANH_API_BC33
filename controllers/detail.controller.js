@@ -57,7 +57,7 @@ function renderRelatedProduct (arrProduct) {
             <div class="col-lg-4 col-md-6">
                 <div class="item">
                     <div class="thumbnail">
-                    <a href="../views/detail.html?productid=${item.id}"><img src="${item.image}" alt="" /></a>
+                    <a href="/views/detail.html?productid=${item.id}"><img src="${item.image}" alt="" /></a>
                     </div>
                     <div class="detail">
                         <h3>${item.name}</h3>
@@ -66,7 +66,7 @@ function renderRelatedProduct (arrProduct) {
                 </div>
                 <div class="price">
                     <div class="col-6 buy">
-                        <a href="../views/detail.html?productid=${item.id}" class="btn">Buy now</a>
+                        <a href="/views/detail.html?productid=${item.id}" class="btn">Buy now</a>
                     </div>
                     <div class="col-6 cost">
                         <p>${item.price}$</p>
