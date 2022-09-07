@@ -17,7 +17,7 @@ class Header extends HTMLElement {
                         </a>
                         <span>(1)</span>
                         <a href="#">Login</a>
-                        <a href="/views/register.html">Register</a>
+                        <a href="../views/register.html">Register</a>
                     </div>
                 </div>
                 <nav class="menu">
