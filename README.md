@@ -7,8 +7,8 @@
     2. Thành : Home page, Register page, Responsive
    
 # III. About project
-  * This is a capstone project that applies Axios to fetch the API and uses SCSS to build the CSS for the website. A website that includes fetch API, basic UI, no animations and nothing special. 
-  * The project uses html5, css3, bootstrap 5.2, SCSS, Axios to fetch API and fully responsive for all devices  
+  * This is a capstone project that applies Axios API and uses SCSS to build the CSS for the website. A website that includes API, basic UI, no animations and nothing special. 
+  * The project uses html5, css3, bootstrap 5.2, SCSS, Axios API and fully responsive for all devices  
   * Lib using: Axios API
 
 ## Demo website follow as below (click on the image): 
